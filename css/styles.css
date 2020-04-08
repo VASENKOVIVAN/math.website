@@ -175,7 +175,7 @@ header {
   padding-top: 140px;
   z-index: 1;
   position: relative;
-  background-image: src="header.jpg";
+  background-image: url(/img/header.jpg);
   height: 100vh;
   background-repeat: no-repeat;
   background-position: center;

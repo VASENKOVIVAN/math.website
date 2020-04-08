@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--title-->
+    <title>Document</title>
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:500,600,700%7COpen+Sans&display=swap"
+        rel="stylesheet">
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--custom css-->
+    <link rel="stylesheet" href="css/stylesforelementary.css">
+    <style type="text/css">
+
+    </style>
+</head>
+
+<body>
+    <!--навигационная секция-->
+    <section id="nav-section" class="nav-section">
+        <div class="container nav-section__container ">
+            <div class="row nav-section__row">
+                <div class="nav-section-img col-xl-3 col-lg-4 col-md-5 col-sm-6 col-6">
+                    <a href="index.html">
+                        <img src="/img/logo.png" id="logo-img" alt="">
+                    </a>
+                </div>
+                <div class="col-xl-9 col-lg-8 col-md-7 col-sm-6 col-6">
+                    <nav class="menu">
+                        <a href="elementaryalgebra.html" class="hvr-pulse">Элементарная алгебра</a>
+                        <a href="workjoblist.html" class="hvr-pulse">Универсальная алгебра</a>
+                        <a href="workjoblist.html" class="hvr-pulse">Общая алгебра</a>
+                        <a href="workjoblist.html" class="hvr-pulse">Линейная алгебра</a>
+                        <a href="workjoblist.html" class="hvr-pulse">Алгебраическая комбинаторика</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--где я-->
+    <section class="wherei">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="from-to">
+                        <a href="index.html">Главная</a> » Элементарная алгебра
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!--section-->
+    <section class="main">
+        <div class="container">
+            <div class="row">
+                <div id="test" class="leftmain col-xl-3 col-lg-3 col-md-3">
+                    <div id="qwertty">
+                        <div>
+                            <div id="div-left-menu-in">
+                                <p id="left-name">СОДЕРЖАНИЕ <br>
+                                    СТАТЬИ</p>
+                                <a href="#sec-1">Элементарная алгебра</a>
+
+                                <ul>
+                                    <li><a href="#sec-1-1">Основные понятия</a></li>
+                                    <li><a href="#sec-1-2">Законы элементарной алгебры</a></li>
+                                    <ul>
+                                        <li><a href="#sec-1-2-1">Вычисление значения выражения</a></li>
+                                        <li><a href="#sec-1-2-2">Свойства операций</a></li>
+                                        <li><a href="#sec-1-2-3">Свойства равенства</a></li>
+                                        <li><a href="#sec-1-2-4">Некоторые алгебраические тождества</a></li>
+                                    </ul>
+                                    <li><a href="#sec-1-3">Решение уравнений</a></li>
+                                    <li><a href="#sec-1-4">Исторический очерк</a></li>
+                                    <li><a href="#sec-1-5">Литература</a></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-9 col-lg-9 col-md-9">
+                    <div>
+                        <h1 id="sec-1">
+                            Элементарная алгебра
+                        </h1>
+                        <p id="siteSub"> Материал из Википедии — свободной энциклопедии</p>
+                        <p><b>Элементарная алгебра</b> — самый старый раздел алгебры, в котором изучаются
+                            алгебраические
+                            выражения и уравнения над вещественными и комплексными числами.</p>
+                        <h2 id="sec-1-1">Основные понятия</h2>
+                        <p>В алгебре принято записывать математические выражения (формулы) в самом общем виде,
+                            заменяя
+                            конкретные числа на буквенные символы, благодаря чему при решении однотипных задач
+                            достигается
+                            максимальная общность результата. Основным содержанием алгебры являются правила
+                            тождественных
+                            преобразований формул, необходимые для решения уравнений, анализа зависимостей,
+                            оптимизации
+                            изучаемой системы и других практических задач.</p>
+                        <p>Кроме букв и чисел, в формулах элементарной алгебры используются арифметические операции:
+                            (сложение, вычитание, умножение, деление, возведение в степень, извлечение корня) и
+                            элементарные
+                            функции (логарифм, тригонометрические функции). Две формулы, соединённые знаком
+                            равенства,
+                            называются уравнением.</p>
+                        <p>Если символ операции между двумя выражениями не указан, подразумевается умножение:</p>
+                        <div class="d-flex justify-content-center">
+                            <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c1702846ef620b9317741f36fd99b26cf3a2c21d"
+                                class="mwe-math-fallback-image-inline" aria-hidden="true"
+                                style="vertical-align: -0.838ex; width:51.964ex; height:3.176ex;"
+                                alt="ab=a\cdot b;\;1{,}2\ x=1{,}2\cdot x;\;\pi (a^{2}+b^{2})=\pi \cdot (a^{2}+b^{2})">
+                        </div>
+                        <p>Пример формулы: площадь треугольника <img
+                                src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4611d85173cd3b508e67077d4a1252c9c05abca2"
+                                class="mwe-math-fallback-image-inline" aria-hidden="true"
+                                style="vertical-align: -0.338ex; width:1.499ex; height:2.176ex;" alt="S"> следующим
+                            образом
+                            выражается через длину
+                            одной из сторон
+                            <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ffd2487510aa438433a2579450ab2b3d557e5edc"
+                                class="mwe-math-fallback-image-inline" aria-hidden="true"
+                                style="vertical-align: -0.338ex; width:1.23ex; height:1.676ex;" alt="a"> и длину
+                            высоты
+                            <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b26be3e694314bc90c3215047e4a2010c6ee184a"
+                                class="mwe-math-fallback-image-inline" aria-hidden="true"
+                                style="vertical-align: -0.338ex; width:1.339ex; height:2.176ex;" alt="h">, опущенной
+                            на
+                            сторону
+                            <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ffd2487510aa438433a2579450ab2b3d557e5edc"
+                                class="mwe-math-fallback-image-inline" aria-hidden="true"
+                                style="vertical-align: -0.338ex; width:1.23ex; height:1.676ex;" alt="a">:</p>
+                        <div class="d-flex justify-content-center">
+                            <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/20b5918cd266549f25325ddc4a4f54522364ada5"
+                                class="mwe-math-fallback-image-inline" aria-hidden="true"
+                                style="vertical-align: -1.838ex; width:9.165ex; height:5.176ex;" alt="S={1 \over 2}ah">
+                        </div>
+                        <p>
+                            Простейшее алгебраическое выражение — это одночлен, состоящий из числового множителя,
+                            умноженного на один или более буквенных символов. Примеры:
+                        </p>
+                        <div class="d-flex justify-content-center" v>
+                            <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f6df582a971ad93b3b9fb41090ff4a37a33bbf0c"
+                                class="mwe-math-fallback-image-inline" aria-hidden="true"
+                                style="vertical-align: -0.671ex; width:19.675ex; height:3.009ex;"
+                                alt="1{,}2\ x;\;{\sqrt {2}}abc^{2};\;x^{2}w">
+                        </div>
+                        <p>Алгебраические суммы (то есть суммы и/или разности) одночленов называются многочленами.
+                            Выражения, имеющие вид частного от деления одного многочлена на другой, называется
+                            алгебраической дробью. Действия с алгебраическими дробями аналогичны действиям с
+                            обыкновенными
+                            дробями — разложение числителя и знаменателя на множители, приведение нескольких дробей
+                            к
+                            общему
+                            знаменателю, сокращение числителя и знаменателя на общий множитель и т. п.</p>
+                        <h2 id="sec-1-2">Законы элементарной алгебры</h2>
+                        <h5 id="sec-1-2-1">Вычисление значения выражения</h5>
+                        <p>Порядок выполнения операций указывается скобками. Если скобок нет, то приоритетность, в
+                            порядке
+                            убывания, следующая.</p>
+                        <ol>
+                            <li>Возведение в степень.</li>
+                            <li>Вычисление функции.</li>
+                            <li>Умножение и деление.</li>
+                            <li>Сложение и вычитание.</li>
+                        </ol>
+                        <p>Примеры:</p>
+                        <ul>
+                            <li><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0135cc337af386fdc33a52edbaff23a8e684e1e3"
+                                    class="mwe-math-fallback-image-inline" aria-hidden="true"
+                                    style="vertical-align: -0.338ex; width:10.197ex; height:2.843ex;"
+                                    alt="a^{b^{c}}=a^{(b^{c})}"></li>
+                            <li><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/53241160634e52dfcf9f31e619b5359d8d2d3627"
+                                    class="mwe-math-fallback-image-inline" aria-hidden="true"
+                                    style="vertical-align: -0.838ex; width:15.774ex; height:3.176ex;"
+                                    alt="\sin x^{2}=\sin(x^{2})"></li>
+                            <li><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e339e4b9f2fd855085eb51134d997ca91a5ce95f"
+                                    class="mwe-math-fallback-image-inline" aria-hidden="true"
+                                    style="vertical-align: -0.838ex; width:21.529ex; height:2.843ex;"
+                                    alt="\sin a+b=(\sin a)+b"></li>
+                        </ul>
+                        <p>При вычислении значения выражения вместо буквенных символов подставляют их числовые
+                            значения,
+                            соответствующие конкретной задаче. Множество числовых значений, при которых выражение
+                            имеет
+                            смысл, называется <b>областью допустимых значений</b> этого выражения. Пример: для
+                            выражения
+                            <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/93415740a91d0b1807091264dae0b6d854ff4e65"
+                                class="mwe-math-fallback-image-inline" aria-hidden="true"
+                                style="vertical-align: -2.171ex; width:5.904ex; height:5.676ex;"
+                                alt="{\displaystyle {\frac {a+b}{a-b}}}"> область допустимых
+                            значений
+                            — все пары <img
+                                src="https://wikimedia.org/api/rest_v1/media/math/render/svg/181523deba732fda302fd176275a0739121d3bc8"
+                                class="mwe-math-fallback-image-inline" aria-hidden="true"
+                                style="vertical-align: -0.671ex; width:3.261ex; height:2.509ex;" alt="a,b">, в
+                            которых
+                            <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3bf17ce351d08f2b7a3e54ba3aa2132f260c84f6"
+                                class="mwe-math-fallback-image-inline" aria-hidden="true"
+                                style="vertical-align: -0.838ex; width:5.326ex; height:2.676ex;" alt="a\neq b">.</p>
+                        <h5 id="sec-1-2-2">Свойства операций</h5>
+                        <ul>
+                            <li>Коммутативность (перестановочное свойство) сложения: <img
+                                    src="https://wikimedia.org/api/rest_v1/media/math/render/svg/199ca92a61a9f6bfa72d2e4d7a34a687721d14cc"
+                                    class=" mwe-math-fallback-image-inline" aria-hidden="true"
+                                    style=" vertical-align: -0.505ex; width:14.849ex; height:2.343ex;" alt="a+b=b+a.\ ">
+                            </li>
+                            <ul>
+                                <li>Вычитание есть действие, обратное сложению.</li>
+                                <li>Вычитание числа b равносильно сложению с числом, противоположным b: <img
+                                        src="https://wikimedia.org/api/rest_v1/media/math/render/svg/696d20e510751ae6d741523d2c3211e1515b0da6"
+                                        class="mwe-math-fallback-image-inline" aria-hidden="true"
+                                        style="vertical-align: -0.838ex; width:18.466ex; height:2.843ex;"
+                                        alt="a-b=a+(-b).\ "></li>
+
+                            </ul>
+                            <li>Коммутативность (перестановочное свойство) умножения: <img
+                                    src="https://wikimedia.org/api/rest_v1/media/math/render/svg/199867a95cba278d13b0234ce943b4cef6725bf7"
+                                    class="mwe-math-fallback-image-inline" aria-hidden="true"
+                                    style="vertical-align: -0.338ex; width:11.492ex; height:2.176ex;"
+                                    alt="a\cdot b=b\cdot a\ "></li>
+                            <ul>
+                                <li>Деление есть действие, обратное умножению.</li>
+                                <li>Деление на нуль невозможно.</li>
+                                <li>Деление на число b равносильно умножению на число, обратное к b: <img
+                                        src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8d1942be47a2bdb471d97cb51a463c81dfa53dcb"
+                                        class="mwe-math-fallback-image-inline" aria-hidden="true"
+                                        style="vertical-align: -2.505ex; width:13.235ex; height:6.176ex;"
+                                        alt="{a \over b}=a\left({1 \over b}\right)."></li>
+                            </ul>
+                            <li>Возведение в степень не коммутативно. Поэтому у него имеются две обратные операции:
+                                извлечение корня и логарифмирование.
+                                <ul>
+                                    <li>Пример: если <img
+                                            src="https://wikimedia.org/api/rest_v1/media/math/render/svg/23f98d7f5ab509abec6066c15e29594ac8d43ff2"
+                                            class="mwe-math-fallback-image-inline" aria-hidden="true"
+                                            style="vertical-align: -0.338ex; width:7.758ex; height:2.343ex;"
+                                            alt="3^{x}=10">, то <img
+                                            src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c1a71b6c8a7dd26099502a6cfe83421c62bd6da5"
+                                            class="mwe-math-fallback-image-inline" aria-hidden="true"
+                                            style="vertical-align: -0.838ex; width:11.813ex; height:2.676ex;"
+                                            alt="x=\log _{3}10."></li>
+                                </ul>
+                            </li>
+                            <li>Корень чётной степени из отрицательного числа не существует (среди вещественных
+                                чисел).
+                                См. комплексные числа.</li>
+                            <li>Ассоциативное (сочетательное) свойство сложения: <img
+                                    src="https://wikimedia.org/api/rest_v1/media/math/render/svg/78049526aa4d0679013492a8df74bbc3e3f228cb"
+                                    class="mwe-math-fallback-image-inline" aria-hidden="true"
+                                    style="vertical-align: -0.838ex; width:25.194ex; height:2.843ex;"
+                                    alt="(a+b)+c=a+(b+c)."></li>
+                            <li>Ассоциативное (сочетательное) свойство умножения: <img
+                                    src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5e6c4d74971641a99268166983d327dbab37efa6"
+                                    class="mwe-math-fallback-image-inline" aria-hidden="true"
+                                    style="vertical-align: -0.838ex; width:13.832ex; height:2.843ex;"
+                                    alt="(ab)c=a(bc).">
+                            </li>
+                            <li>Дистрибутивное (распределительное) свойство для умножения: <img
+                                    src="https://wikimedia.org/api/rest_v1/media/math/render/svg/80019d313e29473357a3c30a2122cb3251b21476"
+                                    class="mwe-math-fallback-image-inline" aria-hidden="true"
+                                    style="vertical-align: -0.838ex; width:18.711ex; height:2.843ex;"
+                                    alt="c(a+b)=ca+cb.">
+                            </li>
+                            <li> Дистрибутивное (распределительное) свойство для возведения в степень: <img
+                                    src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c8b4a26a09e402142de8d19772ed4eeb11f4aaa0"
+                                    class="mwe-math-fallback-image-inline" aria-hidden="true"
+                                    style="vertical-align: -0.838ex; width:12.842ex; height:2.843ex;"
+                                    alt="(ab)^{c}=a^{c}b^{c}."></li>
+                            <li>Сложение показателей степени: <img
+                                    src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b7471fbed883dcc977fd5b18f99ffb817968bf7a"
+                                    class="mwe-math-fallback-image-inline" aria-hidden="true"
+                                    style="vertical-align: -0.338ex; width:12.245ex; height:2.676ex;"
+                                    alt="a^{b}a^{c}=a^{b+c}."></li>
+                            <li>Умножение показателей степени: <img
+                                    src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4ac31da9b3ad4eca7195c06b12a2f288ac552693"
+                                    class="mwe-math-fallback-image-inline" aria-hidden="true"
+                                    style="vertical-align: -0.838ex; width:11.546ex; height:3.176ex;"
+                                    alt="(a^{b})^{c}=a^{bc}."></li>
+                        </ul>
+                        <h5 id="sec-1-2-3">Свойства равенства</h5>
+                        <ul>
+                            <li>Если <img
+                                    src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1956b03d1314c7071ac1f45ed7b1e29422dcfcc4"
+                                    class="mwe-math-fallback-image-inline" aria-hidden="true"
+                                    style="vertical-align: -0.338ex; width:5.326ex; height:2.176ex;" alt="a=b"> и
+                                <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b133a00dc90e54130a96482c99750f845feb955e"
+                                    class="mwe-math-fallback-image-inline" aria-hidden="true"
+                                    style="vertical-align: -0.338ex; width:5.103ex; height:2.176ex;" alt="b=c">, то
+                                <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1beb3f1b1ad87e99791ba713839204a88b27239a"
+                                    class="mwe-math-fallback-image-inline" aria-hidden="true"
+                                    style="vertical-align: -0.338ex; width:5.335ex; height:1.676ex;" alt="a=c">
+                                (транзитивность равенства).</li>
+                            <li><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bfca9a3fa933eb0b4c87b704933167dbdb524a1b"
+                                    class="mwe-math-fallback-image-inline" aria-hidden="true"
+                                    style="vertical-align: -0.338ex; width:5.558ex; height:1.676ex;" alt="a=a">
+                                (рефлексивность).</li>
+                            <li> Если <img
+                                    src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1956b03d1314c7071ac1f45ed7b1e29422dcfcc4"
+                                    class="mwe-math-fallback-image-inline" aria-hidden="true"
+                                    style="vertical-align: -0.338ex; width:5.326ex; height:2.176ex;" alt="a=b">, то
+                                <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0b2e4888d97a754d4bfa4da297b226788a73c6b8"
+                                    class="mwe-math-fallback-image-inline" aria-hidden="true"
+                                    style="vertical-align: -0.338ex; width:5.326ex; height:2.176ex;" alt="b=a">
+                                (симметричность).</li>
+                        </ul>
+                        <h5 id="sec-1-2-4">Некоторые алгебраические тождества</h5>
+                        <p id="siteSub">См. также: Бином Ньютона</p>
+                        <p><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6c762dca0f0fc176bdcdefaff0f845756160b770"
+                                class="mwe-math-fallback-image-inline" aria-hidden="true"
+                                style="vertical-align: -0.838ex; width:50.552ex; height:3.176ex;"
+                                alt="(a+b)^{2}=a^{2}+2ab+b^{2};\;(a-b)^{2}=a^{2}-2ab+b^{2}"><br><img
+                                src="https://wikimedia.org/api/rest_v1/media/math/render/svg/720305b076bbb7d28a5fcd961ed1d9e62937dfe4"
+                                class="mwe-math-fallback-image-inline" aria-hidden="true"
+                                style="vertical-align: -0.838ex; width:67.229ex; height:3.176ex;"
+                                alt="(a+b)^{3}=a^{3}+3a^{2}b+3ab^{2}+b^{3};\;(a-b)^{3}=a^{3}-3a^{2}b+3ab^{2}-b^{3}"><br><img
+                                src="https://wikimedia.org/api/rest_v1/media/math/render/svg/cdfc5b843740ddc32308c5d5ceceba0e2fddc918"
+                                class="mwe-math-fallback-image-inline" aria-hidden="true"
+                                style="vertical-align: -0.838ex; width:64.089ex; height:3.176ex;"
+                                alt="a^{3}+b^{3}=(a+b)(a^{2}-ab+b^{2});\;a^{3}-b^{3}=(a-b)(a^{2}+ab+b^{2})"></p>
+                        <h2 id="sec-1-3">Решение уравнений</h2>
+                        <p id="siteSub">Основная статья: Уравнения</p>
+                        <p>Уравнение — это равенство вида:</p>
+                        <div class="formula">
+                            <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4ba2dd0f13b165952394fcb347c140f81efa7440"
+                                class=" mwe-math-fallback-image-inline" aria-hidden="true"
+                                style="vertical-align: -0.838ex; width:26.936ex; height:2.843ex;"
+                                alt="f(x_{1},x_{2}\dots )=g(x_{1},x_{2}\dots )">
+                        </div>
+                        <p>Решение уравнения — задача по нахождению таких значений аргументов, при которых это
+                            равенство
+                            достигается. На возможные значения аргументов могут быть наложены дополнительные условия
+                            (целочисленности, вещественности и т. д.). Решение уравнений — одна из главных задач
+                            алгебры
+                            и вообще математики, в ходе исторического развития науки были разработаны многочисленные
+                            методы (алгоритмы) для различных разновидностей этой задачи.
+                        </p>
+                        <h2 id="sec-1-4">Исторический очерк</h2>
+                        <p id="siteSub">О происхождении названия науки см. алгебра.</p>
+                        <p>Идея записывать общие свойства чисел и вычислительные алгоритмы на особом символическом
+                            метаязыке появилась давно, однако первоначально буквенные символы в уравнениях
+                            обозначали
+                            только неизвестные, значения которых следует найти, а для прочих членов уравнения
+                            записывали
+                            конкретные числовые значения. Мысль о том, что известные величины (коэффициенты) тоже
+                            полезно для общности обозначать символами, пробивала себе путь медленно.</p>
+                        <p>Идея записывать общие свойства чисел и вычислительные алгоритмы на особом символическом
+                            метаязыке появилась давно, однако первоначально буквенные символы в уравнениях
+                            обозначали
+                            только неизвестные, значения которых следует найти, а для прочих членов уравнения
+                            записывали
+                            конкретные числовые значения. Мысль о том, что известные величины (коэффициенты) тоже
+                            полезно для общности обозначать символами, пробивала себе путь медленно.</p>
+                        <p>Основная проблематика «Арифметики» — нахождение рациональных решений неопределённых
+                            уравнений
+                            (многочленов произвольной степени) с рациональными коэффициентами. У Диофанта
+                            используется
+                            буквенная символика, правда, по-прежнему только для неизвестных. Во введении к
+                            «Арифметике»
+                            Диофант принимает следующие обозначения: неизвестную он называет «числом» и обозначает
+                            буквой ξ, квадрат неизвестной — символом <img
+                                src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3bedfe62c7bc091d515711d65299feb808bcf211"
+                                class="mwe-math-fallback-image-inline" aria-hidden="true"
+                                style="vertical-align: -0.338ex; width:2.157ex; height:2.343ex;" alt="\delta ^{\nu }"> и
+                            т.
+                            д. Особые символы обозначали отрицательные степени, знак равенства и даже, похоже,
+                            отрицательные числа (есть даже правило знаков: минус на минус даёт плюс). Всё прочее
+                            выражается словесно. Сформулированы многие привычные нам правила алгебры: смена знака
+                            при
+                            переносе в другую часть уравнения, сокращение общих членов и др.</p>
+                        <p>Индийские математики средневековья тоже далеко продвинулись в алгебре; их символика
+                            богаче,
+                            чем у Диофанта, хотя несколько громоздка (засорена словами).</p>
+                        <p>В Европе, в книгах «Арифметика» и «О данных числах» Иордана Неморария (XIII век)
+                            усматриваются зачатки символической алгебры, до поры до времени не отделившейся от
+                            геометрии. У него, а также у Фибоначчи уже встречаются выражения вроде «a лошадей за f
+                            дней
+                            съедают e мер овса». Однако в общую концепцию изложения символизм у них ещё не включён.
+                        </p>
+                        <p>Крупнейший алгебраист XV века Лука Пачоли вводит свой аналог алгебраической символики,
+                            ещё не
+                            слишком общий и не слишком удобный.</p>
+                        <p>Концептуальную реформу и коренные улучшения алгебраического языка ввёл в конце XVI века
+                            Франсуа Виет, адвокат по профессии, математик по склонности души. Он чётко представлял
+                            себе
+                            конечную цель — разработку «нового исчисления», своего рода обобщённой арифметики. Виет
+                            обозначал буквами все коэффициенты (кстати, именно Виет придумал этот термин). Все
+                            задачи
+                            решаются в общем виде, и только потом приводится числовые примеры. Виет свободно
+                            применяет
+                            алгебраические преобразования, замену переменных и другие алгебраические приёмы.</p>
+                        <h2 id="sec-1-5">Литература</h2>
+                        <ul>
+                            <li>Выгодский М. Я. Справочник по элементарной математике. — М.: АСТ, 2003. — ISBN
+                                5-17-009554-6
+                            </li>
+                            <li>Зайцев В. В., Рыжков В. В., Сканави М. И. Элементарная математика. Повторительный
+                                курс.
+                                — Издание третье, стереотипное. — М.: Наука, 1976. — 591 с.</li>
+                            <li>Глейзер Г. И. История математики в школе. — М.: Просвещение, 1964. — 376 с.</li>
+                        </ul>
+                        <div class="author">
+                            <p>Статья взята с сайта <a
+                                    href="https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0">wikipedia.org</a>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--section-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <p>Copyright ©2020 - Moscow - <b><u>Ivan Vasenkov</u></b> - swayket@yandex.ru<br>
+                    Being a human is to complicated, i'm gonna be a duck</br>
+                    All Rights no Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!--script js-->
+
+    <script src="/js/fly.js.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+
+</html>

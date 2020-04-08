@@ -1,0 +1,318 @@
+/*=====================
+ Site Name: 
+ Description: 
+ Author: @ivanvasenkov swayket@yandex.ru
+=======================*/
+
+/*TABLE OF CONTENTS*/
+/*=====================
+00. BASE TYPOGRAPHY
+01. НАВИГАЦИЯ CSS
+02. HEADER CSS
+03. FOOTER CSS
+...
+=======================*/
+
+/* ------------------------------------------------
+			  00. BASE TYPOGRAPHY
+--------------------------------------------------- */
+body {
+  cursor: url("/img/cur3.png"), auto;
+  font-family: "Linux Libertine", "Georgia", "Times", serif;
+}
+
+/* ------------------------------------------------
+			  01. НАВИГАЦИЯ CSS
+--------------------------------------------------- */
+.nav-section {
+  top: 0;
+  left: 0;
+  transition: all 0.4s;
+  width: 100%;
+  z-index: 99;
+  padding: 18px 0;
+  background: #000529;
+  background: -moz-linear-gradient(
+    left,
+    #000529 1%,
+    #002055 24%,
+    #005db5 67%,
+    #0074d9 100%
+  );
+  background: -webkit-linear-gradient(
+    left,
+    #000529 1%,
+    #002055 24%,
+    #005db5 67%,
+    #0074d9 100%
+  );
+  background: linear-gradient(
+    to right,
+    #000529 1%,
+    #002055 24%,
+    #005db5 67%,
+    #0074d9 100%
+  );
+}
+
+#logo-img {
+  width: 250px;
+}
+
+.menu,
+.nav-section__row {
+  display: flex;
+  align-items: center;
+}
+
+.menu a {
+  color: white;
+  font-family: Comfortaa;
+  transition-duration: 0.5s;
+  text-align: center;
+}
+
+.menu a:hover {
+  border: 1px solid #fff;
+  text-decoration: none;
+}
+
+/* START Pulse */
+/* https://ianlunn.github.io/Hover/ */
+@-webkit-keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+@keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+.hvr-pulse {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.hvr-pulse:hover,
+.hvr-pulse:focus,
+.hvr-pulse:active {
+  -webkit-animation-name: hvr-pulse;
+  animation-name: hvr-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+/* END Pulse */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .menu {
+    display: flex;
+  }
+  nav a {
+    margin-right: 15px;
+  }
+  body {
+    overflow: auto; /* добавить полосу прокрутки */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+  }
+  nav a {
+    margin-right: 15px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu a {
+    text-align: center;
+  }
+
+  .nav-section__container > div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  #logo-img {
+    padding: 20px 0;
+  }
+  .nav-section {
+    position: absolute;
+  }
+}
+
+@media (max-width: 575px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu a {
+    text-align: center;
+  }
+
+  .nav-section__container > div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  #logo-img {
+    padding: 20px 0;
+  }
+  .nav-section {
+    position: absolute;
+  }
+}
+/* ------------------------------------------------
+			   Для ссылок после менюшки
+---------------------------------------------------*/
+.wherei {
+  font-family: "GTWalsheimProMedium", sans-serif;
+  background: #ececec;
+  font-size: 12px;
+  line-height: 1.17;
+  font-size: 12px;
+  line-height: 1.17;
+  padding: 5px 0;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.from-to a {
+  color: rgba(0, 0, 0, 0.8);
+}
+/* ------------------------------------------------
+			   02. MAIN SECTION CSS
+---------------------------------------------------*/
+
+#div-left-menu {
+  border: rgb(252, 6, 6) solid 1px;
+  margin-top: 40px;
+}
+
+#div-left-menu-in {
+  margin: 10px;
+}
+
+li a {
+  font-size: 13px;
+}
+
+ul {
+  margin-left: -15px;
+}
+
+.leftmain #qwertty div {
+  margin-top: 14px;
+  position: fixed;
+  width: 230px;
+}
+
+#left-name {
+  font-family: "GTWalsheimProBold", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-weight: 900;
+}
+
+/*для центрирования формул*/
+.main .formula {
+  justify-content: center;
+  display: flex;
+}
+
+#siteSub {
+  font-style: italic;
+  display: block;
+  font-size: 92%;
+  color: #4e4e4e;
+}
+
+h5 {
+  font-weight: 800;
+  padding-top: 0.5em;
+  padding-bottom: 0.17em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6 {
+  color: #000;
+  background: none;
+  font-weight: normal;
+  margin: 0;
+  overflow: hidden;
+  padding-top: 0.5em;
+  padding-bottom: 0.17em;
+  border-bottom: 1px solid #a2a9b1;
+}
+
+.author p {
+  text-align: right;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .leftmain #qwertty div {
+    margin-top: 14px;
+    position: fixed;
+    width: 150px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+@media (max-width: 575px) {
+}
+
+/* ------------------------------------------------
+			   03. FOOTER CSS
+---------------------------------------------------*/
+footer {
+  color: #7e7e7e;
+  font-size: 10px;
+}
+
+footer div {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+footer div p {
+  margin: 0;
+}

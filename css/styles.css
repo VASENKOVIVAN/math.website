@@ -1,0 +1,562 @@
+/*=====================
+ Site Name: Math
+ Description: About
+ Author: @ivanvasenkov swayket@yandex.ru
+=======================*/
+
+/*TABLE OF CONTENTS*/
+/*=====================
+00. BASE TYPOGRAPHY
+01. НАВИГАЦИЯ CSS
+02. HEADER CSS
+03. FOOTER CSS
+...
+=======================*/
+
+/* ------------------------------------------------
+			  00. BASE TYPOGRAPHY
+--------------------------------------------------- */
+body {
+  color: white;
+  font-family: "Comfortaa", sans-serif;
+}
+
+/* ------------------------------------------------
+			  01. НАВИГАЦИЯ CSS
+--------------------------------------------------- */
+.nav-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: all 0.4s;
+  width: 100%;
+  z-index: 99;
+  padding: 18px 0;
+}
+
+#logo-img {
+  width: 250px;
+}
+
+.menu,
+.nav-section__row {
+  display: flex;
+  align-items: center;
+}
+
+.menu a {
+  color: white;
+  font-family: Comfortaa;
+  transition-duration: 0.5s;
+  text-align: center;
+}
+
+.menu a:hover {
+  border: 1px solid #fff;
+  text-decoration: none;
+}
+
+/* START Pulse */
+/* https://ianlunn.github.io/Hover/ */
+@-webkit-keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+@keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+.hvr-pulse {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-pulse:hover,
+.hvr-pulse:focus,
+.hvr-pulse:active {
+  -webkit-animation-name: hvr-pulse;
+  animation-name: hvr-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+/* END Pulse */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .menu {
+    display: flex;
+  }
+  nav a {
+    margin-right: 15px;
+  }
+  body {
+    overflow: auto; /* добавить полосу прокрутки */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+  }
+  nav a {
+    margin-right: 15px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu a {
+    text-align: center;
+  }
+
+  .nav-section__container > div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  #logo-img {
+    padding: 20px 0;
+  }
+  .nav-section {
+    position: absolute;
+  }
+}
+
+@media (max-width: 575px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu a {
+    text-align: center;
+  }
+
+  .nav-section__container > div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  #logo-img {
+    padding: 20px 0;
+  }
+  .nav-section {
+    position: absolute;
+  }
+}
+
+/* ------------------------------------------------
+			   02. HEADER CSS
+---------------------------------------------------*/
+
+header {
+  padding-top: 140px;
+  z-index: 1;
+  position: relative;
+  background-image: url(/img/header.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+header::before {
+  content: "";
+  top: 0;
+  left: 0;
+  opacity: 0.85;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  position: absolute;
+  background: #000529;
+  background: -moz-linear-gradient(
+    left,
+    #000529 1%,
+    #002055 24%,
+    #005db5 67%,
+    #0074d9 100%
+  );
+  background: -webkit-linear-gradient(
+    left,
+    #000529 1%,
+    #002055 24%,
+    #005db5 67%,
+    #0074d9 100%
+  );
+  background: linear-gradient(
+    to right,
+    #000529 1%,
+    #002055 24%,
+    #005db5 67%,
+    #0074d9 100%
+  );
+}
+
+.header__container .header__row .header h1 {
+  padding-top: 20px;
+}
+#text-headera {
+  font-size: 17px;
+}
+
+.header a {
+  background: #0ab289;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  width: 218px;
+  display: block;
+  text-align: center;
+  padding: 17px 0;
+  transition: all 0.5s ease;
+  margin-top: 35px;
+}
+
+.header a:hover {
+  background: #03ce91;
+  color: #fff;
+  font-weight: 900;
+  font-size: 16px;
+  width: 225px;
+  display: block;
+  text-align: center;
+  padding: 17px 0;
+  transition: all 0.5s ease;
+  margin-top: 35px;
+}
+
+/* Wobble Bottom */
+@-webkit-keyframes hvr-wobble-bottom {
+  16.65% {
+    -webkit-transform: skew(-12deg);
+    transform: skew(-12deg);
+  }
+  33.3% {
+    -webkit-transform: skew(10deg);
+    transform: skew(10deg);
+  }
+  49.95% {
+    -webkit-transform: skew(-6deg);
+    transform: skew(-6deg);
+  }
+  66.6% {
+    -webkit-transform: skew(4deg);
+    transform: skew(4deg);
+  }
+  83.25% {
+    -webkit-transform: skew(-2deg);
+    transform: skew(-2deg);
+  }
+  100% {
+    -webkit-transform: skew(0);
+    transform: skew(0);
+  }
+}
+@keyframes hvr-wobble-bottom {
+  16.65% {
+    -webkit-transform: skew(-12deg);
+    transform: skew(-12deg);
+  }
+  33.3% {
+    -webkit-transform: skew(10deg);
+    transform: skew(10deg);
+  }
+  49.95% {
+    -webkit-transform: skew(-6deg);
+    transform: skew(-6deg);
+  }
+  66.6% {
+    -webkit-transform: skew(4deg);
+    transform: skew(4deg);
+  }
+  83.25% {
+    -webkit-transform: skew(-2deg);
+    transform: skew(-2deg);
+  }
+  100% {
+    -webkit-transform: skew(0);
+    transform: skew(0);
+  }
+}
+.hvr-wobble-bottom {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+}
+.hvr-wobble-bottom:hover,
+.hvr-wobble-bottom:focus,
+.hvr-wobble-bottom:active {
+  -webkit-animation-name: hvr-wobble-bottom;
+  animation-name: hvr-wobble-bottom;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+/*анимация героев*/
+.hero-animation-img {
+  animation: translating 5s linear 0s infinite;
+}
+.hero-animation-imgtwo {
+  animation: translating 8s linear 0s infinite;
+}
+.hero-animation-imgthree {
+  animation: translating 12s linear 0s infinite;
+}
+@keyframes translating {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(25px, 0px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/*------------------------
+https://www.andreyolegovich.ru/PC/LaTeX/LaTeX_to_HTML.php
+--------------------------*/
+/*Функция Эйлера*/
+.offer #one {
+  position: absolute;
+  top: -5%;
+  left: -40%;
+  color: #03ce91;
+  filter: blur(1px);
+  font-size: 36px;
+}
+/*Дельта-функция Дирака*/
+.offer #two {
+  position: absolute;
+  top: 20px;
+  left: -20%;
+  color: #03ce91;
+  filter: blur(0/5px);
+  font-size: 34px;
+}
+/*Теорема Пифагора*/
+.offer #three {
+  position: absolute;
+  top: 130px;
+  left: 60%;
+  color: #03ce91;
+  filter: blur(1px);
+  font-size: 22px;
+}
+/*Ряд Тейлора-Маклорена*/
+.offer #four {
+  position: absolute;
+  top: 230px;
+  left: 20%;
+  color: #03ce91;
+  filter: blur(2.4px);
+  font-size: 48px;
+}
+/*Основное тригонометрическое тождество*/
+.offer #five {
+  position: absolute;
+  top: 170px;
+  left: 0%;
+  color: #03ce91;
+  filter: blur(0.3px);
+  font-size: 32px;
+}
+
+/*----Анимация флипа формул----*/
+/*----https://daneden.github.io/animate.css/----*/
+
+@-webkit-keyframes flip {
+  from {
+    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0)
+      rotate3d(0, 1, 0, -360deg);
+    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0)
+      rotate3d(0, 1, 0, -360deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) scale3d(1, 1, 1)
+      translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+      rotate3d(0, 1, 0, -190deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  50% {
+    -webkit-transform: perspective(400px) scale3d(1, 1, 1)
+      translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+      rotate3d(0, 1, 0, -170deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) scale3d(0.95, 0.95, 0.95)
+      translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
+    transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0)
+      rotate3d(0, 1, 0, 0deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  to {
+    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0)
+      rotate3d(0, 1, 0, 0deg);
+    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0)
+      rotate3d(0, 1, 0, 0deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+}
+
+@keyframes flip {
+  from {
+    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0)
+      rotate3d(0, 1, 0, -360deg);
+    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0)
+      rotate3d(0, 1, 0, -360deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) scale3d(1, 1, 1)
+      translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+      rotate3d(0, 1, 0, -190deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  50% {
+    -webkit-transform: perspective(400px) scale3d(1, 1, 1)
+      translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+      rotate3d(0, 1, 0, -170deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) scale3d(0.95, 0.95, 0.95)
+      translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
+    transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0)
+      rotate3d(0, 1, 0, 0deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  to {
+    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0)
+      rotate3d(0, 1, 0, 0deg);
+    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0)
+      rotate3d(0, 1, 0, 0deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+}
+
+.flip:hover {
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  -webkit-animation-name: flip;
+  animation-name: flip;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .offer #one {
+    position: absolute;
+    top: -5%;
+    left: -10%;
+    color: #03ce91;
+    filter: blur(1px);
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  header {
+    padding-top: 270px;
+  }
+  .header a {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .offer {
+    visibility: hidden;
+  }
+  header {
+    padding-top: 270px;
+  }
+  .header h1,
+  h5 {
+    text-align: center;
+  }
+  .header div {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* ------------------------------------------------
+			   03. FOOTER CSS
+---------------------------------------------------*/
+footer {
+  color: #7e7e7e;
+  font-size: 10px;
+}
+
+footer div {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+footer div p {
+  margin: 0;
+}

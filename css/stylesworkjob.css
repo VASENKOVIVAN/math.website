@@ -1,0 +1,266 @@
+body {
+  font-family: "Comfortaa", sans-serif;
+}
+
+/* ------------------------------------------------
+			  01. НАВИГАЦИЯ CSS
+--------------------------------------------------- */
+.nav-section {
+  top: 0;
+  left: 0;
+  transition: all 0.4s;
+  width: 100%;
+  z-index: 99;
+  padding: 18px 0;
+  background: #000529;
+  background: -moz-linear-gradient(
+    left,
+    #000529 1%,
+    #002055 24%,
+    #005db5 67%,
+    #0074d9 100%
+  );
+  background: -webkit-linear-gradient(
+    left,
+    #000529 1%,
+    #002055 24%,
+    #005db5 67%,
+    #0074d9 100%
+  );
+  background: linear-gradient(
+    to right,
+    #000529 1%,
+    #002055 24%,
+    #005db5 67%,
+    #0074d9 100%
+  );
+}
+
+#logo-img {
+  width: 250px;
+}
+
+.menu,
+.nav-section__row {
+  display: flex;
+  align-items: center;
+}
+
+.menu a {
+  color: white;
+  font-family: Comfortaa;
+  transition-duration: 0.5s;
+  text-align: center;
+}
+
+.menu a:hover {
+  border: 1px solid #fff;
+  text-decoration: none;
+}
+
+/* START Pulse */
+/* https://ianlunn.github.io/Hover/ */
+@-webkit-keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+@keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+.hvr-pulse {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.hvr-pulse:hover,
+.hvr-pulse:focus,
+.hvr-pulse:active {
+  -webkit-animation-name: hvr-pulse;
+  animation-name: hvr-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+/* END Pulse */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .menu {
+    display: flex;
+  }
+  nav a {
+    margin-right: 15px;
+  }
+  body {
+    overflow: auto; /* добавить полосу прокрутки */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+  }
+  nav a {
+    margin-right: 15px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu a {
+    text-align: center;
+  }
+
+  .nav-section__container > div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  #logo-img {
+    padding: 20px 0;
+  }
+  .nav-section {
+    position: absolute;
+  }
+}
+
+@media (max-width: 575px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu a {
+    text-align: center;
+  }
+
+  .nav-section__container > div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  #logo-img {
+    padding: 20px 0;
+  }
+  .nav-section {
+    position: absolute;
+  }
+}
+/* ------------------------------------------------
+                 Для ссылок после менюшки
+  ---------------------------------------------------*/
+.wherei {
+  font-family: "GTWalsheimProMedium", sans-serif;
+  background: #ececec;
+  font-size: 12px;
+  line-height: 1.17;
+  font-size: 12px;
+  line-height: 1.17;
+  padding: 5px 0;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.from-to a {
+  color: rgba(0, 0, 0, 0.8);
+}
+/* ------------------------------------------------
+			   02. MAIN CSS
+---------------------------------------------------*/
+
+.workjob .tut {
+  text-align: center;
+}
+
+.workjob #one {
+  font-size: 37px;
+}
+
+.workjob #two {
+  font-size: 17px;
+}
+
+.workjob img {
+  width: 300px;
+}
+
+#carouselExampleCaptions {
+  border: rgb(0, 0, 0) solid 1px;
+  width: 500px;
+  height: 200px;
+  background: #000529;
+  background: -moz-linear-gradient(
+    left,
+    #000529 1%,
+    #002055 24%,
+    #005db5 67%,
+    #0074d9 100%
+  );
+  background: -webkit-linear-gradient(
+    left,
+    #000529 1%,
+    #002055 24%,
+    #005db5 67%,
+    #0074d9 100%
+  );
+  background: linear-gradient(
+    to right,
+    #000529 1%,
+    #002055 24%,
+    #005db5 67%,
+    #0074d9 100%
+  );
+}
+.carousel p {
+  text-transform: uppercase;
+}
+.carousel h5,
+.carousel p {
+  color: rgb(255, 255, 255);
+  margin-top: 100px;
+}
+.left-text p {
+  margin-top: 30px;
+}
+/* ------------------------------------------------
+			   03. FOOTER CSS
+---------------------------------------------------*/
+footer {
+  margin-top: 15px;
+  color: #7e7e7e;
+  font-size: 10px;
+}
+
+footer div {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+footer div p {
+  margin: 0;
+}

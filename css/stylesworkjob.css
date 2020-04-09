@@ -6,6 +6,7 @@ body {
 			  01. НАВИГАЦИЯ CSS
 --------------------------------------------------- */
 .nav-section {
+  padding: 20px 0;
   background: #000529;
   background: -moz-linear-gradient(
     left,
@@ -192,6 +193,10 @@ body {
   text-align: center;
 }
 
+.workjob {
+margin-bottom: 20px;
+}
+
 .workjob #one {
   font-size: 37px;
 }
@@ -202,6 +207,7 @@ body {
 
 .workjob img {
   width: 300px;
+  margin-top: 20px;
 }
 
 #carouselExampleCaptions {

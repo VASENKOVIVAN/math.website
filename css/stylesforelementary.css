@@ -25,6 +25,7 @@ body {
 			  01. НАВИГАЦИЯ CSS
 --------------------------------------------------- */
 .nav-section {
+  padding: 20px 0;
   width: 100%;
   background: #000529;
   background: -moz-linear-gradient(

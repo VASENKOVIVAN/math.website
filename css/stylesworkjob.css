@@ -6,12 +6,6 @@ body {
 			  01. НАВИГАЦИЯ CSS
 --------------------------------------------------- */
 .nav-section {
-  top: 0;
-  left: 0;
-  transition: all 0.4s;
-  width: 100%;
-  z-index: 99;
-  padding: 18px 0;
   background: #000529;
   background: -moz-linear-gradient(
     left,
@@ -123,6 +117,9 @@ body {
   nav a {
     margin-right: 15px;
   }
+  .hide img {
+    margin-top: 50px;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -143,8 +140,8 @@ body {
   #logo-img {
     padding: 20px 0;
   }
-  .nav-section {
-    position: absolute;
+  .hide img {
+    display: none;
   }
 }
 
@@ -166,8 +163,8 @@ body {
   #logo-img {
     padding: 20px 0;
   }
-  .nav-section {
-    position: absolute;
+  .hide img {
+    display: none;
   }
 }
 /* ------------------------------------------------
@@ -249,9 +246,10 @@ body {
 			   03. FOOTER CSS
 ---------------------------------------------------*/
 footer {
-  margin-top: 15px;
-  color: #7e7e7e;
+  /*color: #7e7e7e;*/
   font-size: 10px;
+  color: rgb(134, 134, 134);
+  background: rgb(241, 241, 241);
 }
 
 footer div {
@@ -262,5 +260,5 @@ footer div {
 }
 
 footer div p {
-  margin: 0;
+  margin: 51px;
 }

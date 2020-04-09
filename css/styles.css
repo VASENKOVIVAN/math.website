@@ -24,18 +24,13 @@ body {
 /* ------------------------------------------------
 			  01. НАВИГАЦИЯ CSS
 --------------------------------------------------- */
-.nav-section {
-  position: fixed;
-  top: 0;
-  left: 0;
-  transition: all 0.4s;
-  width: 100%;
-  z-index: 99;
-  padding: 18px 0;
-}
 
 #logo-img {
   width: 250px;
+}
+
+.nav-section__container div {
+  margin: 10px 0;
 }
 
 .menu,
@@ -172,11 +167,11 @@ body {
 ---------------------------------------------------*/
 
 header {
-  padding-top: 140px;
   z-index: 1;
   position: relative;
+  /*background-image: url(/img/header.jpg);*/
   background-image: url(https://vasenkovivan.github.io/www/img/header.jpg);
-  height: 100vh;
+  /*height: 100vh;*/
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -218,10 +213,12 @@ header::before {
 }
 
 .header__container .header__row .header h1 {
-  padding-top: 20px;
+  font-size: 62px;
 }
+
 #text-headera {
   font-size: 17px;
+  line-height: 1.5;
 }
 
 .header a {
@@ -235,6 +232,7 @@ header::before {
   padding: 17px 0;
   transition: all 0.5s ease;
   margin-top: 35px;
+  margin-bottom: 35px;
 }
 
 .header a:hover {
@@ -356,7 +354,7 @@ https://www.andreyolegovich.ru/PC/LaTeX/LaTeX_to_HTML.php
 .offer #one {
   position: absolute;
   top: -5%;
-  left: -40%;
+  left: 20%;
   color: #03ce91;
   filter: blur(1px);
   font-size: 36px;
@@ -365,7 +363,7 @@ https://www.andreyolegovich.ru/PC/LaTeX/LaTeX_to_HTML.php
 .offer #two {
   position: absolute;
   top: 20px;
-  left: -20%;
+  left: -40%;
   color: #03ce91;
   filter: blur(0/5px);
   font-size: 34px;
@@ -383,7 +381,7 @@ https://www.andreyolegovich.ru/PC/LaTeX/LaTeX_to_HTML.php
 .offer #four {
   position: absolute;
   top: 230px;
-  left: 20%;
+  left: -40%;
   color: #03ce91;
   filter: blur(2.4px);
   font-size: 48px;
@@ -517,11 +515,27 @@ https://www.andreyolegovich.ru/PC/LaTeX/LaTeX_to_HTML.php
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-  header {
-    padding-top: 270px;
+  .offer {
+    visibility: hidden;
   }
-  .header a {
-    margin-bottom: 20px;
+
+  .header h1,
+  h5 {
+    text-align: center;
+  }
+
+  .header div {
+    display: flex;
+    justify-content: center;
+  }
+
+  .header__container .header__row .header h1 {
+    font-size: 32px;
+  }
+
+  #text-headera {
+    font-size: 17px;
+    line-height: 1.5;
   }
 }
 
@@ -529,16 +543,24 @@ https://www.andreyolegovich.ru/PC/LaTeX/LaTeX_to_HTML.php
   .offer {
     visibility: hidden;
   }
-  header {
-    padding-top: 270px;
-  }
+
   .header h1,
   h5 {
     text-align: center;
   }
+
   .header div {
     display: flex;
     justify-content: center;
+  }
+
+  .header__container .header__row .header h1 {
+    font-size: 32px;
+  }
+
+  #text-headera {
+    font-size: 17px;
+    line-height: 1.5;
   }
 }
 
@@ -546,8 +568,10 @@ https://www.andreyolegovich.ru/PC/LaTeX/LaTeX_to_HTML.php
 			   03. FOOTER CSS
 ---------------------------------------------------*/
 footer {
-  color: #7e7e7e;
+  /*color: #7e7e7e;*/
   font-size: 10px;
+  color: rgb(134, 134, 134);
+  background: rgb(241, 241, 241);
 }
 
 footer div {
@@ -558,5 +582,5 @@ footer div {
 }
 
 footer div p {
-  margin: 0;
+  margin: 51px;
 }

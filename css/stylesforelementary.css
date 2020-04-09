@@ -17,7 +17,7 @@
 			  00. BASE TYPOGRAPHY
 --------------------------------------------------- */
 body {
-  cursor: url(https://vasenkovivan.github.io/www/img/cur3.png), auto;
+  cursor: url("/img/cur3.png"), auto;
   font-family: "Linux Libertine", "Georgia", "Times", serif;
 }
 
@@ -25,12 +25,7 @@ body {
 			  01. НАВИГАЦИЯ CSS
 --------------------------------------------------- */
 .nav-section {
-  top: 0;
-  left: 0;
-  transition: all 0.4s;
   width: 100%;
-  z-index: 99;
-  padding: 18px 0;
   background: #000529;
   background: -moz-linear-gradient(
     left,
@@ -129,9 +124,6 @@ body {
   nav a {
     margin-right: 15px;
   }
-  body {
-    overflow: auto; /* добавить полосу прокрутки */
-  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -162,9 +154,6 @@ body {
   #logo-img {
     padding: 20px 0;
   }
-  .nav-section {
-    position: absolute;
-  }
 }
 
 @media (max-width: 575px) {
@@ -185,9 +174,6 @@ body {
   #logo-img {
     padding: 20px 0;
   }
-  .nav-section {
-    position: absolute;
-  }
 }
 /* ------------------------------------------------
 			   Для ссылок после менюшки
@@ -195,8 +181,6 @@ body {
 .wherei {
   font-family: "GTWalsheimProMedium", sans-serif;
   background: #ececec;
-  font-size: 12px;
-  line-height: 1.17;
   font-size: 12px;
   line-height: 1.17;
   padding: 5px 0;
@@ -293,17 +277,25 @@ h6 {
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
+  #test {
+    display: none;
+  }
 }
 
 @media (max-width: 575px) {
+  #test {
+    display: none;
+  }
 }
 
 /* ------------------------------------------------
 			   03. FOOTER CSS
 ---------------------------------------------------*/
 footer {
-  color: #7e7e7e;
+  /*color: #7e7e7e;*/
   font-size: 10px;
+  color: rgb(134, 134, 134);
+  background: rgb(241, 241, 241);
 }
 
 footer div {
@@ -314,5 +306,5 @@ footer div {
 }
 
 footer div p {
-  margin: 0;
+  margin: 51px;
 }

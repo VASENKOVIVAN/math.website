@@ -17,7 +17,7 @@
 			  00. BASE TYPOGRAPHY
 --------------------------------------------------- */
 body {
-  cursor: url("/img/cur3.png"), auto;
+  cursor: url("img/cur3.png"), auto;
   font-family: "Linux Libertine", "Georgia", "Times", serif;
 }
 

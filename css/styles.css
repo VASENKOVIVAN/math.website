@@ -567,6 +567,25 @@ https://www.andreyolegovich.ru/PC/LaTeX/LaTeX_to_HTML.php
 /*------------------------------------------------
 			   03. WHY_I_MAKE_THIS_SITE CSS
 ------------------------------------------------*/
+.WHY_I_MAKE_THIS_SITE {
+  color: #000000;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cards div {
+  padding: 10px;
+}
+.box {
+  flex-basis: 23%;
+  text-align: center;
+}
+.box div {
+  height: 100px;
+}
 
 /*------------------------------------------------
 			   04. FOOTER CSS

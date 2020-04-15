@@ -573,18 +573,24 @@ https://www.andreyolegovich.ru/PC/LaTeX/LaTeX_to_HTML.php
 
 .cards {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
-
-.cards div {
-  padding: 10px;
+.card_box_math div {
+  margin: 0;
+  padding: 0;
 }
+.cards > div {
+  padding: 35px 0px;
+}
+
+.cards p {
+  margin-bottom: 0;
+}
+
 .box {
   flex-basis: 23%;
   text-align: center;
-}
-.box div {
-  height: 100px;
 }
 
 /*------------------------------------------------

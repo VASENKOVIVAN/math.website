@@ -575,6 +575,7 @@ https://www.andreyolegovich.ru/PC/LaTeX/LaTeX_to_HTML.php
 ------------------------------------------------*/
 .text h1 {
   text-align: center;
+  margin-bottom: 35px;
 }
 
 .ABOUT-MATH {
@@ -582,7 +583,6 @@ https://www.andreyolegovich.ru/PC/LaTeX/LaTeX_to_HTML.php
 }
 
 .ABOUT-MATH__p {
-  font-family: "Linux Libertine", "Georgia", "Times", serif;
   justify-content: center;
   display: flex;
   align-items: center;

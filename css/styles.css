@@ -9,8 +9,9 @@
 00. BASE TYPOGRAPHY
 01. НАВИГАЦИЯ CSS
 02. HEADER CSS
-03. WHY_I_MAKE_THIS_SITE CSS
-04. FOOTER CSS
+03. ABOUT-MATH CSS
+04. WHY_I_MAKE_THIS_SITE CSS
+05. FOOTER CSS
 ...
 ==================================================*/
 
@@ -18,7 +19,6 @@
 			   00. BASE TYPOGRAPHY
 ------------------------------------------------*/
 body {
-  color: white;
   font-family: "Comfortaa", sans-serif;
 }
 
@@ -220,6 +220,11 @@ header::before {
 #text-headera {
   font-size: 17px;
   line-height: 1.5;
+}
+
+.header h1,
+h5 {
+  color: rgb(252, 252, 252);
 }
 
 .header a {
@@ -564,8 +569,34 @@ https://www.andreyolegovich.ru/PC/LaTeX/LaTeX_to_HTML.php
     line-height: 1.5;
   }
 }
+
 /*------------------------------------------------
-			   03. WHY_I_MAKE_THIS_SITE CSS
+			   03. ABOUT-MATH CSS
+------------------------------------------------*/
+.text h1 {
+  text-align: center;
+}
+
+.ABOUT-MATH {
+  margin: 35px 0;
+}
+
+.ABOUT-MATH__p {
+  font-family: "Linux Libertine", "Georgia", "Times", serif;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.ABOUT-MATH__img {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+/*------------------------------------------------
+			   04. WHY_I_MAKE_THIS_SITE CSS
 ------------------------------------------------*/
 .WHY_I_MAKE_THIS_SITE {
   color: #000000;
@@ -592,9 +623,8 @@ https://www.andreyolegovich.ru/PC/LaTeX/LaTeX_to_HTML.php
   flex-basis: 23%;
   text-align: center;
 }
-
 /*------------------------------------------------
-			   04. FOOTER CSS
+			   05. FOOTER CSS
 ------------------------------------------------*/
 footer {
   /*color: #7e7e7e;*/

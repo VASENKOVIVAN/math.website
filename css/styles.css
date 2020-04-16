@@ -11,7 +11,8 @@
 02. HEADER CSS
 03. ABOUT-MATH CSS
 04. WHY_I_MAKE_THIS_SITE CSS
-05. FOOTER CSS
+05. RESPONSE CSS
+06. FOOTER CSS
 ...
 ==================================================*/
 
@@ -629,7 +630,97 @@ https://www.andreyolegovich.ru/PC/LaTeX/LaTeX_to_HTML.php
   text-align: center;
 }
 /*------------------------------------------------
-			   05. FOOTER CSS
+			   05. RESPONSE CSS
+------------------------------------------------*/
+.response {
+  color: #fff;
+  background: #000529;
+  background: -moz-linear-gradient(
+    left,
+    #000529 1%,
+    #002055 24%,
+    #005db5 67%,
+    #0074d9 100%
+  );
+  background: -webkit-linear-gradient(
+    left,
+    #000529 1%,
+    #002055 24%,
+    #005db5 67%,
+    #0074d9 100%
+  );
+  background: linear-gradient(
+    to right,
+    #000529 1%,
+    #002055 24%,
+    #005db5 67%,
+    #0074d9 100%
+  );
+}
+
+.response__form {
+  margin: 35px 0;
+}
+
+.response__img img {
+  width: 250px;
+}
+.response__img {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.response h1 {
+  text-align: center;
+  padding-top: 45px;
+}
+.hvr-wobble-bottom-div {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.hvr-wobble-bottom-div input {
+  background: #0ab289;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  width: 218px;
+  display: block;
+  text-align: center;
+  padding: 17px 0;
+  transition: all 0.5s ease;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  border: 0px;
+}
+
+.hvr-wobble-bottom-div input:hover {
+  background: #03ce91;
+  color: #fff;
+  font-weight: 900;
+  font-size: 16px;
+  width: 225px;
+  display: block;
+  text-align: center;
+  padding: 17px 0;
+  transition: all 0.5s ease;
+  margin-top: 35px;
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .response__img img {
+    width: 100px;
+  }
+}
+
+@media (max-width: 575px) {
+  .response__img img {
+    width: 50px;
+  }
+}
+
+/*------------------------------------------------
+			   06. FOOTER CSS
 ------------------------------------------------*/
 footer {
   /*color: #7e7e7e;*/

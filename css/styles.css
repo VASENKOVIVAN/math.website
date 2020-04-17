@@ -754,6 +754,18 @@ footer div p {
   margin: 51px;
 }
 
+footer a {
+  text-decoration: none;
+  font-size: 10px;
+  color: rgb(134, 134, 134);
+  transition: all 0.9s ease;
+}
+
+footer a:hover {
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(134, 134, 134);
+}
 /*----------Бургер start------------------*/
 
 @media (min-width: 767px) {

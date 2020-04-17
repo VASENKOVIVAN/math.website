@@ -19,6 +19,7 @@
 /*------------------------------------------------
 			   00. BASE TYPOGRAPHY
 ------------------------------------------------*/
+
 body {
   font-family: "Comfortaa", sans-serif;
 }
@@ -36,6 +37,7 @@ body {
   align-items: center;
   text-align: center;
 }
+
 .nav-section__container div {
   margin: 10px 0;
 }
@@ -579,6 +581,7 @@ https://www.andreyolegovich.ru/PC/LaTeX/LaTeX_to_HTML.php
 /*------------------------------------------------
 			   03. ABOUT-MATH CSS
 ------------------------------------------------*/
+
 .text h1 {
   text-align: center;
   margin-bottom: 35px;
@@ -601,9 +604,11 @@ https://www.andreyolegovich.ru/PC/LaTeX/LaTeX_to_HTML.php
   align-items: center;
   height: 100%;
 }
+
 /*------------------------------------------------
 			   04. WHY_I_MAKE_THIS_SITE CSS
 ------------------------------------------------*/
+
 .WHY_I_MAKE_THIS_SITE {
   color: #000000;
 }
@@ -613,10 +618,12 @@ https://www.andreyolegovich.ru/PC/LaTeX/LaTeX_to_HTML.php
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
 .card_box_math div {
   margin: 0;
   padding: 0;
 }
+
 .cards > div {
   padding: 35px 0px;
 }
@@ -629,9 +636,11 @@ https://www.andreyolegovich.ru/PC/LaTeX/LaTeX_to_HTML.php
   flex-basis: 23%;
   text-align: center;
 }
+
 /*------------------------------------------------
 			   05. RESPONSE CSS
 ------------------------------------------------*/
+
 .response {
   color: #fff;
   background: #000529;
@@ -665,21 +674,25 @@ https://www.andreyolegovich.ru/PC/LaTeX/LaTeX_to_HTML.php
 .response__img img {
   width: 250px;
 }
+
 .response__img {
   justify-content: center;
   display: flex;
   align-items: center;
 }
+
 .response h1 {
   text-align: center;
   padding-top: 45px;
 }
-.hvr-wobble-bottom-div {
+
+.twobutt {
   justify-content: center;
   display: flex;
   align-items: center;
 }
-.hvr-wobble-bottom-div input {
+
+.twobutt input {
   background: #0ab289;
   color: #fff;
   font-weight: 400;
@@ -689,12 +702,12 @@ https://www.andreyolegovich.ru/PC/LaTeX/LaTeX_to_HTML.php
   text-align: center;
   padding: 17px 0;
   transition: all 0.5s ease;
-  margin-top: 35px;
-  margin-bottom: 35px;
+  margin-top: 25px;
+  /* margin-bottom: 35px; */
   border: 0px;
 }
 
-.hvr-wobble-bottom-div input:hover {
+.twobutt input:hover {
   background: #03ce91;
   color: #fff;
   font-weight: 900;
@@ -722,6 +735,7 @@ https://www.andreyolegovich.ru/PC/LaTeX/LaTeX_to_HTML.php
 /*------------------------------------------------
 			   06. FOOTER CSS
 ------------------------------------------------*/
+
 footer {
   /*color: #7e7e7e;*/
   font-size: 10px;
@@ -739,7 +753,9 @@ footer div {
 footer div p {
   margin: 51px;
 }
+
 /*----------Бургер start------------------*/
+
 @media (min-width: 767px) {
   .hamburger-menu {
     display: none;
